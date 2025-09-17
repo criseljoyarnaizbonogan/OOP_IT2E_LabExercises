@@ -1,92 +1,92 @@
  EnergySource    
-"- name: String                   
+- name: String                   
 - capacity_kwh: double           
 - location: String               
-- isActive: boolean "
-"+ EnergySource()                
+- isActive: boolean 
++ EnergySource()                
 + EnergySource(name, capacity,location)         
 + generateEnergy(): double       
 + get_status(): String           
 + activate(): void               
-+ deactivate(): void "
++ deactivate(): void 
 
 SolarPanel 
-- panelEfficiency: double   
-"+ SolarPanel()                   
+- panelEfficiency: double
++ SolarPanel()                   
 + SolarPanel(name, capacity, location, eff)      
-+ generateEnergy(hours): double"
++ generateEnergy(hours): double
 
 RooftopSolarPanel    
-" - roofTiltAngle: double          
-- shadingFactor: double  "
+- roofTiltAngle: double          
+- shadingFactor: double  
 "+ RooftopSolarPanel()            
 + RooftopSolarPanel(name, cap, loc, eff,tilt, shade)
-+ generateEnergy(): double  "
++ generateEnergy(): double  
 
 SolarCanopy  
-"- coverageArea: double           
-- connectedDevices: int   "
-"+ SolarCanopy()                  
+- coverageArea: double           
+- connectedDevices: int   
++ SolarCanopy()                  
 + SolarCanopy(name, cap, loc, area, devices)     
-+ generateEnergy(): double  "
++ generateEnergy(): double  
 
  WindTurbine 
 - avgWindSpeed_kmh: double 
-"+ WindTurbine() 
++ WindTurbine() 
 + WindTurbine(name, capacity, location, speed)   + generateEnergy(condition): double                  "
 
 UrbanVerticalAxisWindTurbine(VAWT)    
-"- noiseLevel: double             
-- birdSafetyRating: int  "
-"+ UrbanVerticalAxisWindTurbine() 
+- noiseLevel: double             
+- birdSafetyRating: int  
++ UrbanVerticalAxisWindTurbine() 
 +UrbanVerticalAxisWindTurbine(name, cap, loc, speed, noise, rate)
-+ generateEnergy(): double "
++ generateEnergy(): double 
 
 SmallCommunityWindMill  
-"- manualMaintenance: boolean     
-- localMaterialsUsed: boolean "
-"+ SmallCommunityWindMill()       
+- manualMaintenance: boolean     
+- localMaterialsUsed: boolean 
++ SmallCommunityWindMill()       
 + SmallCommunityWindMill(name, cap, loc, speed) 
-+ generateEnergy(): double  "
++ generateEnergy(): double  
 
 OffshoreWindTurbine     
-"- foundationType: String         
-- maintenanceInterval: int  "
-"+ OffshoreWindTurbine()          
+- foundationType: String         
+- maintenanceInterval: int  
++ OffshoreWindTurbine()          
 + OffshoreWindTurbine(name, cap, loc, speed, found, maint)
-+ generateEnergy(): double "
++ generateEnergy(): double 
 
  HydroGenerator      
 - waterFlowRate_lps: double 
-"+ HydroGenerator()               
++ HydroGenerator()               
 + HydroGenerator(name, capacity, location, flow) 
-+ generateEnergy(rainfall): double    "
++ generateEnergy(rainfall): double    
 
 PicoHydroGenerator   
-"- streamWidth: double            
-- headHeight: double  "
-"+ PicoHydroGenerator()           
+- streamWidth: double            
+- headHeight: double  
++ PicoHydroGenerator()           
 + PicoHydroGenerator(name, cap, loc, flow, width, head)
-+ generateEnergy(): double"
++ generateEnergy(): double
 
 HydroPumpStorageUnit 
-"- pumpingCapacity: double        
-- storageTankVolume: double "
-"+ HydroPumpStorageUnit()         
+- pumpingCapacity: double        
+- storageTankVolume: double 
++ HydroPumpStorageUnit()         
 + HydroPumpStorageUnit(name, cap, loc, flow, pumpCap, ankVol)  
-+ generateEnergy(): double  "
++ generateEnergy(): double  
 
 FloatingSolarFarm   
-"- waterSurfaceArea: double       
-- coolingEffect: double  "
-"+ FloatingSolarFarm()            
+- waterSurfaceArea: double       
+- coolingEffect: double  
++ FloatingSolarFarm()            
 + FloatingSolarFarm(name, cap, loc, area)   
-+ generateEnergy(): double "
++ generateEnergy(): double 
 
  Run-of-RiverMicroHydro 
-"- channelLength: double          
-- environmentalImpact: String"
-"+ Run-of-RiverMicroHydro()       
+- channelLength: double          
+- environmentalImpact: String
++ Run-of-RiverMicroHydro()       
 + Run-of-RiverMicroHydro(name, cap, loc, flow, length)
-+ generateEnergy(): double  "
++ generateEnergy(): double  
 
